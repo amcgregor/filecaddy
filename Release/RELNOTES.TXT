@@ -1,0 +1,8 @@
+FileCaddy Version 1.0
+Copyright (c) 2002, Kopsis, Inc.
+
+Introduction:
+FileCaddy is a general purpose file management application for VFS enabled PalmOS devices. Compatible devices include SD slot equipped Palm handhelds, Sony Clie's, Handera handhelds, SD slot equipped Handspring Treos, and Handspring Visors with FlashAdapter or MemPlug Springboard modules.
+
+Notes for this version:
+Typedown -is- there, and no longer case-sensitive.

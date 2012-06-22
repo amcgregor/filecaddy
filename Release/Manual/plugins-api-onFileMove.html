@@ -1,0 +1,41 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>FileCaddy Manual: Plugin API: onFileMove</title>
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="Application" content="FileCaddy">
+<meta name="Version" content="1159">
+</head>
+
+<body>
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" style="border-bottom: 1px solid black;"><tr valign="bottom"><td><font size="+2"><b>FileCaddy</b></font></td><td align="right">Build Number: <b>1159</b></td></tr></table>
+<p><div align="center" style="border-bottom: 1px solid black; background: black; color: white;"><a name="top"></a><b>Plugin API: onFileMove</b></div>
+
+<table bgcolor="lightgray" border=0 style="border-bottom: 1px solid black; text-indent: -1cm;" width="100%"><tr><td><tt>
+<font color="blue">UInt32</font> onFileMove ( <font color="blue">void</font> *gp, <font color="blue">UInt16</font> src, <font color="blue">UInt16</font> dest, <font color="blue">Char</font> **f, <font color="blue">Boolean</font> done );
+</tt></td></tr></table>
+
+<p><u>Description</u><br>Basically the same as <tt>onFileCopy</tt>.  This function is used to interrupt or log the transfer of files.
+
+<table border=0 cellpadding=0 cellspacing=1>
+<tr><td colspan=2><u>Paramaters</u></td></tr>
+<tr><td><tt>*gp&nbsp;</tt></td><td>A pointer to the plugin global variables.</td></tr>
+<tr><td><tt>src&nbsp;</tt></td><td>Source VFS volume identifier.</td></tr>
+<tr><td><tt>dest&nbsp;</tt></td><td>Destination VFS volume identifier.</td></tr>
+<tr><td><tt>**f&nbsp;</tt></td><td>Source and destination filenames (including path, if any).</td></tr>
+<tr><td><tt>done&nbsp;</tt></td><td>Has the operation already been completed?</td></tr>
+</table>
+<p><u>Result</u><br>The function returns a PalmOS error code, or 0 otherwise.  Extra error codes are defined in the <tt>plugin.h</tt> file.
+<p><u>Comments</u><br>This function is called twice - once before the file is copied, and once after.  This allows a plugin to cancel the transfer of a file (say, a restricted datafile) before it has begun.
+<p><u>See Also</u><br><a href="plugins-api-onFileCopy.html">onFileCopy</a><br><a href="plugins-api-onFileMove.html">onFileMove</a>
+
+<hr size=1 width="100%" noshade color=black>
+<div style="margin-left: 15px;"><table width="100%" border=0 cellpadding=0 cellspacing=1>
+<tr><td>Up:</td><td>&nbsp;<a href="plugins-api-functions.html">Plugin API Functions</a></td></tr>
+</table></div><br>
+
+</body>
+</html>

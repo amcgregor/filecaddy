@@ -1,0 +1,38 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>FileCaddy Manual: Plugin API: onGetInfo</title>
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="Application" content="FileCaddy">
+<meta name="Version" content="1159">
+</head>
+
+<body>
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" style="border-bottom: 1px solid black;"><tr valign="bottom"><td><font size="+2"><b>FileCaddy</b></font></td><td align="right">Build Number: <b>1159</b></td></tr></table>
+<p><div align="center" style="border-bottom: 1px solid black; background: black; color: white;"><a name="toc"></a><b>Plugin API</b>: onGetInfo</div>
+
+<table bgcolor="lightgray" border=0 style="border-bottom: 1px solid black; text-indent: -1cm;" width="100%"><tr><td><tt>
+<font color="blue">Boolean</font> onGetInfo ( <font color="blue">void</font> *gp, <font color="blue">EventPtr</font> eventP );
+</tt></td></tr></table>
+
+<p><u>Description</u><br>If non-void, allows an About dialog to be displayed for the plugin.  This function is a standard form event handler.
+
+<table border=0 cellpadding=0 cellspacing=1>
+<tr><td colspan=2><u>Paramaters</u></td></tr>
+<tr><td><tt>*gp&nbsp;</tt></td><td>A pointer to the plugin global variables.</td></tr>
+<tr><td><tt>eventP&nbsp;</tt></td><td>Event data.</td></tr>
+</table>
+<p><u>Result</u><br>Returns true if the event was handled, false if the event is to be passed through to the system.
+<p><u>Comments</u><br>When the ? button is pressed next to the plugin's name, form 2000 from the plugin is loaded and this function is specified as the event handler.
+<p><u>See Also</u><br><a href="plugins-api-onSetup.html">onSetup</a>
+
+<hr size=1 width="100%" noshade color=black>
+<div style="margin-left: 15px;"><table width="100%" border=0 cellpadding=0 cellspacing=1>
+<tr><td>Up:</td><td>&nbsp;<a href="plugins-api-functions.html">Plugin API Functions</a></td></tr>
+</table></div><br>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<iSiloXDocumentList>
+  <iSiloXDocument>
+    <Source>
+      <Sources>
+        <Path>manual.html</Path>
+      </Sources>
+    </Source>
+    <Destination>
+      <Title>FileCaddy Manual</Title>
+      <Files>
+        <Path>../</Path>
+      </Files>
+    </Destination>
+    <LinkOptions>
+      <MaximumDepth value="10"/>
+      <FollowOffsite value="no"/>
+      <UnresolvedDetail value="exclude"/>
+    </LinkOptions>
+    <ImageOptions>
+      <AltText value="exclude"/>
+      <Images value="include"/>
+      <ResizeLargeImages value="yes"/>
+      <ImproveContrast value="yes"/>
+      <Dither value="yes"/>
+      <MaximumWidth value="144"/>
+      <MaximumHeight value="132"/>
+      <Compress value="yes"/>
+      <BitDepth1 value="include"/>
+      <BitDepth2 value="include"/>
+      <BitDepth4 value="include"/>
+      <BitDepth8 value="include"/>
+      <BitDepth16 value="include"/>
+    </ImageOptions>
+    <TableOptions>
+      <IgnoreTables value="no"/>
+      <UseMinimumDepth value="no"/>
+      <MinimumDepth value="1"/>
+      <UseMaximumBottomReach value="no"/>
+      <MaximumBottomReach value="1"/>
+      <UnfoldFullPageTables value="no"/>
+      <IgnorePixelWidths value="yes"/>
+    </TableOptions>
+    <ColorOptions>
+      <BackgroundColors value="IgnoreBody"/>
+      <TextColors value="keep"/>
+    </ColorOptions>
+    <MarginOptions>
+      <LeftRightMargins value="IgnoreBody"/>
+    </MarginOptions>
+    <SecurityOptions>
+      <Convert value="disallow"/>
+      <CopyBeam value="allow"/>
+      <CopyAndPaste value="allow"/>
+      <Modify value="disallow"/>
+    </SecurityOptions>
+    <TextOptions>
+      <ProcessLineBreaks value="yes"/>
+      <ConvertSingleLineBreaks value="no"/>
+      <Preformatted value="no"/>
+      <UseMonospaceFont value="no"/>
+      <MonospaceFontSize value="10"/>
+      <TabStopWidth value="8"/>
+    </TextOptions>
+    <DocumentOptions>
+      <PageBounds value="rigid"/>
+      <UseDefaultCategory value="no"/>
+    </DocumentOptions>
+    <Bookmarks>
+      <Document>
+        <UseFile value="no"/>
+        <UseNamedAnchors value="no"/>
+        <NamedAnchorType value="WordWebPage"/>
+        <UseIncludeFilter value="no"/>
+        <UseExcludeFilter value="no"/>
+      </Document>
+    </Bookmarks>
+    <LastConversion>
+      <Date>2002/07/15 17:32:17</Date>
+      <Size value="26666"/>
+      <Status>Successful conversion</Status>
+    </LastConversion>
+  </iSiloXDocument>
+</iSiloXDocumentList>

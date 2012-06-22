@@ -1,0 +1,17 @@
+applicationiconname 1000 "HelloPlug"
+
+ALERT ID 1000
+INFORMATION
+BEGIN
+  TITLE "Hello World!"
+  MESSAGE  "Inside:\nplugin::cmdStartup"
+  BUTTONS  "OK"
+END
+
+ALERT ID 1001
+INFORMATION
+BEGIN
+  TITLE "Hello World!"
+  MESSAGE  "Inside:\nplugin::cmdShutdown"
+  BUTTONS  "OK"
+END
